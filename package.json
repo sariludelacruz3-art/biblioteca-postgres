@@ -1,0 +1,20 @@
+{
+  "name": "biblioteca-postgres",
+  "version": "1.0.0",
+  "description": "Sistema de gestión de biblioteca con Node.js, Express y PostgreSQL",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:setup": "node database/scripts/setup-db.js",
+    "db:schema-only": "node database/scripts/setup-db.js --no-seed",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.11.5"
+  }
+}
